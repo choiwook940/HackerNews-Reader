@@ -1,0 +1,195 @@
+body {
+  background-color: black;
+  color: #6B6C70;
+  margin-top: 24px; 
+  padding: 60px 20px 0;
+  font-family: Product Sans;
+}
+a {text-decoration: none;}
+a:visited {color: inherit;}
+strong {color: white}
+h1 {font-size: 32px;margin: 30px 0; color: white; font-weight: 700;}
+
+/* nav */
+ul.nav-list {
+
+}
+ul.nav-list li {
+  list-style: none;
+  float: left;
+}
+ul.nav-list input {
+  width: 90%;
+  height: 32px;
+  background-color: #2C2D32;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  padding-left: 30px;
+  margin-left: 20px;
+}
+
+ul.nav-list .search label {
+  position: relative;
+}
+ul.nav-list .search label::before {
+  content: "";
+  position: absolute;
+  left: 27px;
+  top: 3px;
+  bottom: 0;
+  width: 20px;
+  background: url(../images/search.svg) no-repeat center
+}
+
+ul.nav-list .about {
+  margin-left: 50px;
+  position: absolute;
+  top: 27px;
+}
+
+
+
+/* home */
+.home ul.sortNav {
+  display: flex;
+  justify-content: space-between;
+}
+.home ul.sortNav li {
+  border-bottom: 1px solid #38393D;
+  width: 25%;
+}
+.home ul.sortNav li a {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  height: 37px;
+  line-height: 38px;
+}
+
+
+/* about page */
+
+.about.active {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 24px;
+  left: 0;
+  background-color: black;
+  padding: 0 20px;
+  box-sizing: border-box;
+  transition: transform 500ms;
+  transform: translateY(100%);
+}
+.about button {
+  background-color: transparent;
+  border: none;
+  padding: 0 4px;
+}
+.about h3 {
+  font-size: 24px;
+  text-align: center;
+  margin: 10px 0 30px;
+}
+.header {
+  height: 24px;
+  padding: 20px;
+  position: fixed;
+  top:24px;
+  left: 0;
+  background-color: black;
+  width: 100vw;
+}
+.about-icon {
+  margin-left: 130px;
+}
+
+.about p {
+  font-size: 13px;
+  margin-top: 16px;
+  line-height: 15.77px;
+}
+.about a {
+  color: red;
+}
+.about h4 {
+  font-size: 22px;
+  margin-top: 30px;
+}
+.about h5 {
+  background-color: #2C2D32;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+
+/* news List */
+
+.news-list > li {
+  margin-top: 15px;
+  background-color: #2C2D32;
+}
+.news-list > li strong {
+  font-weight: normal;
+  padding: 15px;
+  display: block;
+}
+.news-list > li div {
+  border-top: 1px solid #38393D;
+  padding: 10px 15px;
+  font-size: 12px;
+}
+
+
+/* Daily news */
+
+.daily-news {
+   /* display: flex; */
+}
+.daily-news > li {
+  height: 270px;
+  border-radius: 6px;
+  background-color: #2C2D32;
+  padding: 15px;
+  position: relative;
+}
+.daily-news > li .news .writer-id {
+  color: white;
+}
+.daily-news > li strong {
+  font-weight: bolder;
+  display: block;
+  font-size: 26px;
+  margin-top: 15px;
+  line-height: 36px;
+}
+.daily-news > li .written-time {
+  position: absolute;
+  bottom: 60px;
+  font-size: 12px;
+}
+.daily-news > li .sub {
+  border-top: 1px solid #38393D;
+  padding: 13px 15px;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.daily-news > li .sub .sub-score {
+  position: absolute;
+  right: 60px;
+}
+.daily-news > li .sub .sub-descendants {
+  /* position: absolute;
+  right: 60px; */
+  float: right;
+  margin-right: 5px;
+}
+
+.news-list > li .sub {}
+.news-list > li .sub .sub-score {float: right;}
+.news-list > li .sub .sub-descendants {float: right; margin-right: 10px;}
